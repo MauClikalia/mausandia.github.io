@@ -1,304 +1,181 @@
-<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<!DOCTYPE html>
+<html lang="es">
 
-<style type="text/css">
-	body {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-		font-weight:300;
-		font-size:18px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 1100px;
-	}
-	
-	h1 {
-		font-size:32px;
-		font-weight:300;
-	}
-	
-	.disclaimerbox {
-		background-color: #eee;		
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-		padding: 20px;
-	}
-
-	video.header-vid {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	img.header-img {
-		height: 140px;
-		border: 1px solid black;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	img.rounded {
-		border: 1px solid #eeeeee;
-		border-radius: 10px ;
-		-moz-border-radius: 10px ;
-		-webkit-border-radius: 10px ;
-	}
-	
-	a:link,a:visited
-	{
-		color: #1367a7;
-		text-decoration: none;
-	}
-	a:hover {
-		color: #208799;
-	}
-	
-	td.dl-link {
-		height: 160px;
-		text-align: center;
-		font-size: 22px;
-	}
-	
-	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-		5px 5px 0 0px #fff, /* The second layer */
-		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-		10px 10px 0 0px #fff, /* The third layer */
-		10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-		15px 15px 0 0px #fff, /* The fourth layer */
-		15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-		20px 20px 0 0px #fff, /* The fifth layer */
-		20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-		25px 25px 0 0px #fff, /* The fifth layer */
-		25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-		margin-left: 10px;
-		margin-right: 45px;
-	}
-
-	.paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35); /* The top layer shadow */
-
-		margin-left: 10px;
-		margin-right: 45px;
-	}
-
-
-	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-		box-shadow:
-		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-		5px 5px 0 0px #fff, /* The second layer */
-		5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-		10px 10px 0 0px #fff, /* The third layer */
-		10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-		margin-top: 5px;
-		margin-left: 10px;
-		margin-right: 30px;
-		margin-bottom: 5px;
-	}
-	
-	.vert-cent {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-	
-	hr
-	{
-		border: 0;
-		height: 1px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-	}
-</style>
-
-<html>
 <head>
-	<title>This is my paper title</title>
-	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
-	<meta property="og:description" content="Paper description." />
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
 
-	<!-- Get from Google Analytics -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src=""></script> 
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <title>Title page</title>  
 
-		gtag('config', 'UA-75863369-6');
-	</script>
-</head>
+<link href="./main.d8e0d294.css" rel="stylesheet"></head>
 
-<body>
-	<br>
-	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
-		<table align=center width=600px>
-			<table align=center width=600px>
-				<tr>
-					<td align=center width=100px>
-						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
-						</center>
-					</td>
-					<td align=center width=100px>
-						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
-						</center>
-					</td>
-					<td align=center width=100px>
-						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
-						</center>
-					</td>
-				</tr>
-			</table>
-			<table align=center width=250px>
-				<tr>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href=''>[Paper]</a></span>
-						</center>
-					</td>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
-						</center>
-					</td>
-				</tr>
-			</table>
-		</table>
-	</center>
+<body class="">
 
-	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=260px>
-					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
-					</center>
-				</td>
-			</tr>
-		</table>
-		<table align=center width=850px>
-			<tr>
-				<td>
-					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
-				</td>
-			</tr>
-		</table>
-	</center>
+<!-- Add your content of header -->
+<div class="background-color-layer" style="background-image: url('./images/img-01')"></div>
+<main class="content-wrapper">
+  <header class="white-text-container section-container">
+    <div class="text-center">
+      <h1>Mauricio Missael Sánchez Díaz</h1>
+      <p>Científico de Datos</p>
+      <p>
+        <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/mausandia" title="">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a class="fa-icon fa-icon-2x" href="./MauBlog/BlogIntro.html" title="">
+          <i class="fa fa-camera-retro"></i>
+        </a>
+      </p>
+    </div>
+  </header>
 
-	<hr>
 
-	<table align=center width=850px>
-		<center><h1>Abstract</h1></center>
-		<tr>
-			<td>
-				This is my abstract.
-			</td>
-		</tr>
-	</table>
-	<br>
 
-	<hr>
-	<center><h1>Talk</h1></center>
-	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
-	</p>
+<!-- Add your site or app content here -->
+ 
+ <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
 
-	<table align=center width=800px>
-		<br>
-		<tr>
-			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
-				</span>
-			</center>
-		</tr>
-	</table>
-	<hr>
+        <div class="card">
+          <div class="card-block">
+            <h2>Sobre mí</h2>
+            <div class="row">
+              <div class="col-md-4">
+                <p><img src="./images/img-01.jpg" class="img-responsive" alt=""></p>
+              </div>
+              <div class="col-md-8">
 
-	<center><h1>Code</h1></center>
+              <p> Soy un científico por convicción y vocación, me encanta guiarme por la curiosidad y el aprenizaje. Soy autodidacta y paciente con mi aprendizaje y de quién me rodea.</p>
+              <p> Estoy interesado en la intersección de los sistema biologicos y la tecnología</p>
 
-	<table align=center width=420px>
-		<center>
-			<tr>
-				<td>
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=400px>
-		<tr>
-			<td align=center width=400px>
-				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
-				</center>
-			</td>
-		</tr>
-	</table>
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td>
-					Short description if wanted
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
-			</center>
-		</span>
-	</table>
-	<br>
-	<hr>
-	<table align=center width=450px>
-		<center><h1>Paper and Supplementary Material</h1></center>
-		<tr>
-			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
-				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
-				<span style="font-size:4pt"><a href=""><br></a>
-				</span>
-			</td>
-		</tr>
-	</table>
-	<br>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<table align=center width=600px>
-		<tr>
-			<td><span style="font-size:14pt"><center>
-				<a href="./resources/bibtex.txt">[Bibtex]</a>
-			</center></td>
-		</tr>
-	</table>
+		<div class="card">
+          <div class="card-block">
+            <h2>Experiencia Laboral</h2>
+            <div class="work-experience">
+              <small class="date">2021-Actual</small>
+              <h3 class="h5 date-title"> Científico de datos - <a href="https://clikalia.com/mx" title="StartUp website">Clikalia</a></h3>
+              
 
-	<hr>
-	<br>
+              <p>Investigación para el desarollo de modelos predictores del precio de mercado.</p>
+            </div>
+            <div class="work-experience">
+              <small class="date">2021-2022</small>
+              <h3 class="h5 date-title"> Científico de datos - <a href="http://radiofarmacia.facmed.unam.mx/investigacion.html" title=""> FACMED-UNAM</a></h3>
+              
+              <p>Analísis de imagenes por MRI, SPECT y PET.</p>
+            </div>
+            <div class="work-experience">
+              <small class="date">2019-2020</small>
+              <h3 class="h5 date-title"> Estadístico de investigación - <a href="http://www.innn.salud.gob.mx/interna/investigacion/departamentos/fisica.html" title=""> Laboratorio de Física Médica - INNN</a></h3>
+              
+              <p>Análisis estadístico para evaluar el impacto del protocolo 483 de la IAEA-AAPM utilizando una base de datos con pacientes del Instituto Nacional de Neurología y Neurocirugía.</p>
+            </div>
+          </div>
+    </div>
 
-	<table align=center width=900px>
-		<tr>
-			<td width=400px>
-				<left>
-					<center><h1>Acknowledgements</h1></center>
-					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a> for a <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>.
-				</left>
-			</td>
-		</tr>
-	</table>
+		<div class="card">
+      <div class="card-block">
+        <h2>Experiencia antes del primer grado</h2>
+        <div class="work-experience">
+          <small class="date">2016-2017</small>
+          <h3 class="h5 date-title"> Profesor de ciencias - <a href="https://es-la.facebook.com/matematike.ensenada" title=""> Matematike </a></h3>
+          
+          <p>Clases de matemáticas y ciencias básicas para alumnos de bachillerato y universidad. Divulgación de la ciencia.</p>
+        </div>
+        <div class="work-experience">
+          <small class="date">2016</small>
+          <h3 class="h5 date-title"> Beca de investigación -<a href="http://www.incan.salud.gob.mx/interna/investigacion/investigacion-basica.html" title="">Instituto Nacional de Cancerología</a></h3>
+          
+          <p>Evaluación in vitro del radiofármaco compuesto por nanotpartículas de Oro, funcionalizadas con RGD y Tc-99m.</p>
+          <p>Supervición: Dr. Luis Alberto Medina Velázquez </p>
+        </div>
+        <div class="work-experience">
+          <small class="date">2015</small>
+          <h3 class="h5 date-title"> Beca de investigación - <a href="http://www.inb.unam.mx/" title=""> Instituto de Neurobiología-UNAM</a></h3>
+          
+          <p>Análisis estadístico para evaluar la respuesta en la conducta sexual en modelos de rata macho después de la suministración diaria de nicotina.</p>
+          <p>Supervición: <a href="http://132.248.142.23/web_site/home_pages/87?locale=es" title=""> Dr Raúl Gerardo Paredes Guerrero</a> </p>
+        </div>
+      </div>
+    </div>
+        
+    
+    <div class="card">
+          <div class="card-block">
+            <h2>Educación</h2>
+            			  <div class="work-experience">
+                <div class="education-experience">
+                  <small class="date">2022-2023</small>
+                  <h3 class="h5 date-title"><a href="http://www.mcc.unam.mx/" title=""> Especialista en Cómputo de Alto Rendimiento</a></h3>
+                  <p><a href="https://www.iimas.unam.mx/" title=""> Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas - UNAM</a></p>
+                </div>
+              </div>
+			  <div class="work-experience">
+                <div class="education-experience">
+                  <small class="date">2020-2021</small>
+                  <h3 class="h5 date-title"><a href="https://www.posgrado.unam.mx/matematicas/es/especializacion-en-estad%C3%ADstica-aplicada" title=""> Especialista en Estadística Aplicada</a></h3>
+                  <p><a href="https://www.iimas.unam.mx/" title=""> Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas - UNAM</a></p>
+                </div>
+              </div>
+			  <div class="work-experience">
+                <div class="education-experience">
+                  <small class="date">2018-2020</small>
+                  <h3 class="h5 date-title"><a href="http://w2.fisica.unam.mx/fismed" title=""> Maestría en Física Médica</a></h3>
+                  <p><a href="https://www.nucleares.unam.mx/" title=""> Instituto de Ciencias Nucleares - UNAM</a></p>
+				  <p><a href="http://www.innn.salud.gob.mx/interna/investigacion/departamentos/fisica.html" title=""> Laboratorio de Física Médica - INNN</a></p>
+				  <p>Proyecto de Tesis: <a href="http://132.248.9.195/ptd2021/junio/0812636/Index.html" title=""> 	Impacto de los factores de correción de salida propuestos por el código de práctica TRS-483 del OIEA en el cálculo de distribuciones de dosis</a></p>
+				  <p>Asesora: Dra. Olivia García Garduño</p>
+                </div>
+              </div>
+			  <div class="work-experience">
+                <div class="education-experience">
+                  <small class="date">2013-2017</small>
+                  <h3 class="h5 date-title"><a href="https://nanolic.ens.cnyn.unam.mx/inicio" title=""> Licenciado en Nanotecnolgía</a></h3>
+                  <p>Centro de Nanociencias y Nanotecnología - UNAM</p>
+				  <p>Proyecto de Tesis: <a href="http://132.248.9.195/ptd2017/octubre/0767016/Index.html" title=""> Dilucidación de la primera demostración del teorema adiabático</a></p>
+				  <p>Asesor: <a href="https://lvmm.mx/about/miembros/reyes-serrato" title=""> Dr. Armando Reyes Serrato</a></p>
+                </div>
+              </div>
+            
+          </div>
+        </div>       
+     </div>
+   </div>
+ </div>
 
-<br>
-</body>
+</main>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     scrollRevelation('.card');
+  });
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--><script type="text/javascript" src="./main.bc58148c.js"></script></body>
+
 </html>
